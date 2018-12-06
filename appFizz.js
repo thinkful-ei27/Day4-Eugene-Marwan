@@ -16,12 +16,8 @@ $(function submitFizzBuzz() {
                         result.push($('<div class="fizz-buzz-item buzz"><span>buzz</span></div>'))
                             } else if (result[i] % 3 ===0){
                                 result.push($('<div class ="fizz-buzz-item fizz"><span>fizz</span></div>'))
-
                             }
-
-        
                         }
-
                         $('.js-results').append(result)
                     })
             })

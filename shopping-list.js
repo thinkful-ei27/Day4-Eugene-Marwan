@@ -19,5 +19,13 @@ $(function() {
             </button>
         </div>
        </li>`);
-  });
-});
+    });
+        $('.shopping-list').on('click','.shopping-item-delete',function(item){
+            $(item.target).closest('li').remove()
+           });
+
+           $('.shopping-list').on('click','.shopping-item-toggle',function(item1){
+               $(item1.target).closest('li').toggleClass('shopping-item__checked')
+           })
+    })
+
